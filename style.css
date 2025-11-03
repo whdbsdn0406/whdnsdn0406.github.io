@@ -1,17 +1,18 @@
-/* ---------- COLOR THEME (WCAG SAFE) ---------- */
+/* ---------- COLOR THEME  ---------- */
 :root {
-  --bg-main: #FAFAFA;        /* light page background */
-  --text-dark: #111111;      /* main body text (on light bg) */
-  --text-light: #FFFFFF;     /* text on dark sections/buttons */
+  --bg-main: #FAFAFA;
+  --text-dark: #111111;
+  --text-light: #FFFFFF;
 
-  --color1: #0D47A1;         /* primary / nav / header */
-  --color2: #C62828;         /* accent / buttons / callouts */
-  --color3: #2E7D32;         /* success / subhead / badges */
-  --color4: #1976D2;         /* link color (more contrast than #1565C0) */
-  --color5: #263238;         /* dark section / footer */
+  --color1: #0D47A1;         /* nav background */
+  --color2: #C62828;         /* h1 */
+  --color3: #2E7D32;         /* h2, buttons */
+  --color4: #1565C0;         /* links */
+  --color4-hover: #004BA0;
+  --color5: #263238;         /* section background */
 
-  --panel-bg: #ECEFF1;       /* cards / light panels */
-  --border-color: #CFD8DC;   /* subtle borders */
+  --panel-bg: #ECEFF1;
+  --border-color: #CFD8DC;
 }
 
 /* ---------- GENERAL RESET ---------- */
@@ -46,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #FFEB3B; /* bright yellow hover for visibility */
+  color: #FFEB3B;
 }
 
 /* ---------- PAGE TITLES ---------- */
@@ -71,7 +72,7 @@ section {
 }
 
 section h2 {
-  color: var(--text-light); /* bright for dark background */
+  color: var(--text-light);
   margin-bottom: 10px;
 }
 
@@ -95,7 +96,7 @@ section h2 {
 .movie-poster small {
   display: block;
   margin-top: 8px;
-  color: #E3F2FD; /* very light blue for readability */
+  color: #E3F2FD;
   font-style: italic;
 }
 
@@ -115,7 +116,7 @@ dl {
 
 dt {
   font-weight: bold;
-  color: #AED581; /* soft green visible on dark bg */
+  color: #AED581;
   margin-top: 10px;
 }
 
@@ -126,6 +127,13 @@ dd {
 }
 
 /* ---------- FORM STYLING ---------- */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--text-light);
+}
+
 form input, form textarea, form select {
   width: 100%;
   padding: 10px;
@@ -187,7 +195,7 @@ a[href^="http"] {
 }
 
 a[href^="http"]:hover {
-  color: #004BA0;
+  color: var(--color4-hover);
 }
 
 /* ---------- UTILITY CLASSES ---------- */
