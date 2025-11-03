@@ -1,13 +1,13 @@
-/* ---------- COLOR THEME (Revised for Contrast) ---------- */
+/* ---------- COLOR THEME (WCAG contrast safe) ---------- */
 :root {
-  --color1: #FFD966;    /* Warm Yellow for highlights */
-  --color2: #C2185B;    /* Deep Pink for headings */
-  --color3: #558B2F;    /* Deep Olive Green for subheadings */
-  --color4: #6A1B9A;    /* Deep Purple for links */
-  --color5: #455A64;    /* Muted Dark Blue-Gray for section bg */
-  --text-dark: #1A1A1A; /* Almost Black */
-  --text-light: #FFFFFF;
-  --bg-main: #FAFAFA;
+  --color1: #FFB300;      /* High-contrast amber (used for highlight) */
+  --color2: #C2185B;      /* Strong magenta (used for h1) */
+  --color3: #388E3C;      /* Dark green (used for h2) */
+  --color4: #303F9F;      /* Indigo for links */
+  --color5: #263238;      /* Very dark gray-blue for section bg */
+  --text-dark: #111111;   /* Nearly black text */
+  --text-light: #FFFFFF;  /* White text */
+  --bg-main: #F5F5F5;     /* Soft light gray background */
 }
 
 /* ---------- GENERAL RESET ---------- */
@@ -47,19 +47,19 @@ nav a:hover {
 
 /* ---------- PAGE TITLES ---------- */
 h1 {
-  color: var(--color2);  /* Deep Pink */
+  color: var(--color2);
   margin-bottom: 1em;
   text-align: center;
 }
 
 h2 {
-  color: var(--color3);  /* Olive Green */
+  color: var(--color3);
   margin-bottom: 15px;
 }
 
 /* ---------- SECTIONS ---------- */
 section {
-  background-color: var(--color5); /* Dark Blue-Gray */
+  background-color: var(--color5);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -67,7 +67,7 @@ section {
 }
 
 section h2 {
-  color: var(--color1); /* Yellow title on dark background */
+  color: var(--color1);
   margin-bottom: 10px;
 }
 
@@ -105,14 +105,13 @@ li {
   margin-bottom: 5px;
 }
 
-/* Description Lists */
 dl {
   margin-bottom: 15px;
 }
 
 dt {
   font-weight: bold;
-  color: var(--color1);
+  color: var(--color3);
   margin-top: 10px;
 }
 
@@ -147,7 +146,6 @@ form button {
 
 form button:hover {
   background-color: var(--color1);
-  color: var(--text-dark);
 }
 
 /* ---------- COLOR PALETTE STYLING ---------- */
@@ -175,12 +173,12 @@ form button:hover {
   justify-content: center;
   font-weight: bold;
   font-size: 14px;
-  color: var(--text-light);
+  color: #fff;
 }
 
 /* ---------- EXTERNAL LINKS ---------- */
 a[href^="http"] {
-  color: var(--color4); /* Deep purple for better contrast */
+  color: var(--color4);
   text-decoration: none;
 }
 
@@ -201,9 +199,10 @@ a[href^="http"]:hover {
   background-color: var(--color1);
   padding: 2px 5px;
   border-radius: 3px;
+  color: var(--text-dark);
 }
 
-/* ---------- SERIF TEXT (Font Requirement) ---------- */
+/* ---------- SERIF TEXT ---------- */
 .serif-text {
   font-family: 'Georgia', serif;
   font-size: 16px;
