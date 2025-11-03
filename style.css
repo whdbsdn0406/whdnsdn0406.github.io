@@ -1,16 +1,16 @@
-/* ---------- COLOR THEME  ---------- */
+/* ---------- COLOR THEME (WCAG SAFE) ---------- */
 :root {
   --bg-main: #FAFAFA;        /* light page background */
   --text-dark: #111111;      /* main body text (on light bg) */
   --text-light: #FFFFFF;     /* text on dark sections/buttons */
 
-  --color1: #0D47A1;         /* primary / nav / header (white text OK) */
-  --color2: #C62828;         /* accent / buttons / callouts (white text OK) */
-  --color3: #2E7D32;         /* success / subhead / badges (white text OK) */
-  --color4: #1565C0;         /* links / hovers (white text OK) */
-  --color5: #263238;         /* dark section / footer (white text OK) */
+  --color1: #0D47A1;         /* primary / nav / header */
+  --color2: #C62828;         /* accent / buttons / callouts */
+  --color3: #2E7D32;         /* success / subhead / badges */
+  --color4: #1976D2;         /* link color (more contrast than #1565C0) */
+  --color5: #263238;         /* dark section / footer */
 
-  --panel-bg: #ECEFF1;       /* cards / sections on light bg */
+  --panel-bg: #ECEFF1;       /* cards / light panels */
   --border-color: #CFD8DC;   /* subtle borders */
 }
 
@@ -39,14 +39,14 @@ nav {
 }
 
 nav a {
-  color: var(--text-dark);
+  color: var(--text-light);
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: var(--color4);
+  color: #FFEB3B; /* bright yellow hover for visibility */
 }
 
 /* ---------- PAGE TITLES ---------- */
@@ -71,7 +71,7 @@ section {
 }
 
 section h2 {
-  color: var(--color1);
+  color: var(--text-light); /* bright for dark background */
   margin-bottom: 10px;
 }
 
@@ -95,7 +95,7 @@ section h2 {
 .movie-poster small {
   display: block;
   margin-top: 8px;
-  color: var(--color1);
+  color: #E3F2FD; /* very light blue for readability */
   font-style: italic;
 }
 
@@ -115,7 +115,7 @@ dl {
 
 dt {
   font-weight: bold;
-  color: var(--color3);
+  color: #AED581; /* soft green visible on dark bg */
   margin-top: 10px;
 }
 
@@ -177,17 +177,17 @@ form button:hover {
   justify-content: center;
   font-weight: bold;
   font-size: 14px;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 /* ---------- EXTERNAL LINKS ---------- */
 a[href^="http"] {
   color: var(--color4);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a[href^="http"]:hover {
-  text-decoration: underline;
+  color: #004BA0;
 }
 
 /* ---------- UTILITY CLASSES ---------- */
@@ -203,7 +203,7 @@ a[href^="http"]:hover {
   background-color: var(--color1);
   padding: 2px 5px;
   border-radius: 3px;
-  color: var(--text-dark);
+  color: #FFFFFF;
 }
 
 /* ---------- SERIF TEXT ---------- */
