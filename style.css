@@ -1,3 +1,15 @@
+/* ---------- ACCESSIBILITY ---------- */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---------- COLOR THEME  ---------- */
 :root {
   --bg-main: #FAFAFA;
@@ -7,8 +19,8 @@
   --color1: #0D47A1;         /* nav background */
   --color2: #C62828;         /* h1 */
   --color3: #2E7D32;         /* h2, buttons */
-  --color4: #1565C0;         /* links */
-  --color4-hover: #004BA0;
+  --color4: #00FFC8;         /* links (neon-like bright aqua) */
+  --color4-hover: #1DE9B6;   /* links hover */
   --color5: #263238;         /* section background */
 
   --panel-bg: #ECEFF1;

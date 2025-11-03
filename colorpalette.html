@@ -4,6 +4,18 @@
   <meta charset="UTF-8" />
   <title>Color Palette</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .visually-hidden {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -19,11 +31,20 @@
   <section>
     <p>Choose 5 colors that reflect the mood of the film:</p>
     <div class="color-picker-row">
-      <input type="color" id="color1" />
-      <input type="color" id="color2" />
-      <input type="color" id="color3" />
-      <input type="color" id="color4" />
-      <input type="color" id="color5" />
+      <label for="color1" class="visually-hidden">Color 1</label>
+      <input type="color" id="color1" name="color1" />
+
+      <label for="color2" class="visually-hidden">Color 2</label>
+      <input type="color" id="color2" name="color2" />
+
+      <label for="color3" class="visually-hidden">Color 3</label>
+      <input type="color" id="color3" name="color3" />
+
+      <label for="color4" class="visually-hidden">Color 4</label>
+      <input type="color" id="color4" name="color4" />
+
+      <label for="color5" class="visually-hidden">Color 5</label>
+      <input type="color" id="color5" name="color5" />
     </div>
     <button onclick="showPalette()">Show My Palette</button>
   </section>
