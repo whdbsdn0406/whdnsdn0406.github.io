@@ -1,13 +1,13 @@
-/* ---------- COLOR THEME ---------- */
+/* ---------- COLOR THEME (Revised for Contrast) ---------- */
 :root {
-  --color1: #EBDE7F;
-  --color2: #EB96BF;
-  --color3: #C8EB7F;
-  --color4: #CE7FEB;
-  --color5: #909683;
-  --text-dark: #222;
-  --text-light: #fff;
-  --bg-main: #f9f9f9;
+  --color1: #FFD966;    /* Warm Yellow for highlights */
+  --color2: #C2185B;    /* Deep Pink for headings */
+  --color3: #558B2F;    /* Deep Olive Green for subheadings */
+  --color4: #6A1B9A;    /* Deep Purple for links */
+  --color5: #455A64;    /* Muted Dark Blue-Gray for section bg */
+  --text-dark: #1A1A1A; /* Almost Black */
+  --text-light: #FFFFFF;
+  --bg-main: #FAFAFA;
 }
 
 /* ---------- GENERAL RESET ---------- */
@@ -47,19 +47,19 @@ nav a:hover {
 
 /* ---------- PAGE TITLES ---------- */
 h1 {
-  color: var(--color2);
+  color: var(--color2);  /* Deep Pink */
   margin-bottom: 1em;
   text-align: center;
 }
 
 h2 {
-  color: var(--color3);
+  color: var(--color3);  /* Olive Green */
   margin-bottom: 15px;
 }
 
 /* ---------- SECTIONS ---------- */
 section {
-  background-color: var(--color5);
+  background-color: var(--color5); /* Dark Blue-Gray */
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -67,7 +67,7 @@ section {
 }
 
 section h2 {
-  color: var(--color3);
+  color: var(--color1); /* Yellow title on dark background */
   margin-bottom: 10px;
 }
 
@@ -112,7 +112,7 @@ dl {
 
 dt {
   font-weight: bold;
-  color: var(--color3);
+  color: var(--color1);
   margin-top: 10px;
 }
 
@@ -135,7 +135,7 @@ form input, form textarea, form select {
 
 form button {
   background-color: var(--color3);
-  color: var(--text-dark);
+  color: var(--text-light);
   border: none;
   padding: 10px 20px;
   margin-top: 10px;
@@ -147,6 +147,7 @@ form button {
 
 form button:hover {
   background-color: var(--color1);
+  color: var(--text-dark);
 }
 
 /* ---------- COLOR PALETTE STYLING ---------- */
@@ -174,12 +175,12 @@ form button:hover {
   justify-content: center;
   font-weight: bold;
   font-size: 14px;
-  color: #fff;
+  color: var(--text-light);
 }
 
 /* ---------- EXTERNAL LINKS ---------- */
 a[href^="http"] {
-  color: var(--color4);
+  color: var(--color4); /* Deep purple for better contrast */
   text-decoration: none;
 }
 
