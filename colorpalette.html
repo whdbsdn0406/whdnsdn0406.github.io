@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Palette</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="colorpalette.html">Color Palette</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+
+  <h1>Movie Color Palette</h1>
+
+  <section>
+    <p>Choose 5 colors that reflect the mood of the film:</p>
+    <div class="color-picker-row">
+      <input type="color" id="color1" />
+      <input type="color" id="color2" />
+      <input type="color" id="color3" />
+      <input type="color" id="color4" />
+      <input type="color" id="color5" />
+    </div>
+    <button onclick="showPalette()">Show My Palette</button>
+  </section>
+
+  <section>
+    <h2>Your Color Palette</h2>
+    <div class="palette-box" id="paletteDisplay"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reviews</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="colorpalette.html">Color Palette</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+
+  <h1>Movie Reviews</h1>
+  <section>
+    <h2>Add a Review</h2>
+    <form id="reviewForm">
+      <input type="text" id="movieTitle" placeholder="Movie Title" required>
+      <textarea id="reviewText" placeholder="Write your review..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>All Reviews</h2>
+    <div id="reviewsContainer"></div>
+  </section>
+</body>
+</html>
