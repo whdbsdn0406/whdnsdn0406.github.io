@@ -1,13 +1,17 @@
-/* ---------- COLOR THEME (WCAG contrast safe) ---------- */
+/* ---------- COLOR THEME  ---------- */
 :root {
-  --color1: #FFB300;      /* High-contrast amber (used for highlight) */
-  --color2: #C2185B;      /* Strong magenta (used for h1) */
-  --color3: #388E3C;      /* Dark green (used for h2) */
-  --color4: #303F9F;      /* Indigo for links */
-  --color5: #263238;      /* Very dark gray-blue for section bg */
-  --text-dark: #111111;   /* Nearly black text */
-  --text-light: #FFFFFF;  /* White text */
-  --bg-main: #F5F5F5;     /* Soft light gray background */
+  --bg-main: #FAFAFA;        /* light page background */
+  --text-dark: #111111;      /* main body text (on light bg) */
+  --text-light: #FFFFFF;     /* text on dark sections/buttons */
+
+  --color1: #0D47A1;         /* primary / nav / header (white text OK) */
+  --color2: #C62828;         /* accent / buttons / callouts (white text OK) */
+  --color3: #2E7D32;         /* success / subhead / badges (white text OK) */
+  --color4: #1565C0;         /* links / hovers (white text OK) */
+  --color5: #263238;         /* dark section / footer (white text OK) */
+
+  --panel-bg: #ECEFF1;       /* cards / sections on light bg */
+  --border-color: #CFD8DC;   /* subtle borders */
 }
 
 /* ---------- GENERAL RESET ---------- */
